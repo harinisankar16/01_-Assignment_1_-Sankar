@@ -368,7 +368,7 @@ One way to understand the difference in the CDR between Kenya
 compute_pop_prop <- function (pop_data) {
 pop_data %>% 
     group_by(period) %>%
-    mutate(pop_prop = py / sum(py)) %>%
+    mutate(pop_prop = py / sum(py)) %>% #popP data renamed to fit style (pop_prop)
     ungroup()
 }
 ```
@@ -385,7 +385,7 @@ sweden_data<- compute_pop_prop(sweden_data)
 mutate(kenya_data,
  temp_cdr  = asdr * sweden_data$pop_prop) %>%
  group_by(period) %>%
- summarise(cdr_sweden = sum(temp_cdr))
+ summarise(cdr_sweden = sum(temp_cdr)) #renamed cdrresweden to fit style (cdr_sweden)
 ```
 
 The counterfactual CDR for kenya is around the same compared to the original CDR. 
