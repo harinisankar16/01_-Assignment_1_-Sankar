@@ -2,7 +2,7 @@
 title: Understanding World Population Dynamics
 subtitle: Assignment 1 - PSYC593
 format:
-  html: default
+  html: default 
 date: today
 author: Harini Sankar
 ---
@@ -59,9 +59,9 @@ Population Division (2013). *World Population Prospects: The 2012 Revision, DVD 
 library(tidyverse)
 
 # Read data ----
-world_data  <- readr::read_csv("../../data/World.csv")
-kenya_data  <- readr::read_csv("../../data/Kenya.csv")
-sweden_data <- readr::read_csv("../../data/Sweden.csv")
+world_data  <- readr::read_csv("../../data/raw/World.csv")
+kenya_data  <- readr::read_csv("../../data/raw/Kenya.csv")
+sweden_data <- readr::read_csv("../../data/raw/Sweden.csv")
 
 ```
 
